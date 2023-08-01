@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Add an ID to the search input -->
+<input type="text" id="search-input" placeholder="Search food to fill your stomach" name="search" class="search-bar">
+<button type="button" onclick="performSearch()" class="search-button"><i class="fa fa-search"></i></button>
+<script>
+    function performSearch() {
+      // Get the search input value
+      const searchValue = document.getElementById('search-input').value.toLowerCase();
+  
+      // Define the food items available on your page
+      const foodItems = [
+        "idly with chunty",
+        // Add other food items here if needed
+      ];
+  
+      // Check if the search value matches any of the food items
+      const searchResult = foodItems.find(item => item.toLowerCase().includes(searchValue));
+  
+      // Display the search result
+      if (searchResult) {
+        alert(`Here's your search result: ${searchResult}`);
+      } else {
+        alert(`No matching results found for: ${searchValue}`);
+      }
+    }
+  </script>
+  
+</body>
+</html>

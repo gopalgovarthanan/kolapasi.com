@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Victor+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            border: 2px solid black;
+            width: 1346px;
+            height: 1500px;
+            left: -10px;
+            top: 0px;
+            position: absolute;
+            border-right: 100px;
+            border-top: 100px;
+        }
+        .nav-bar
+{
+    border: 2px solid orange;
+    background-color: orange;
+    height: 90px;
+    width: 1341px;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+}
+.nav-image
+{
+    top: 0px;
+    right: 0px;
+    position: absolute;
+}
+    .material-symbols-outlined
+         {
+            font-size: 46px;
+            position: absolute;
+            left: 40px;
+            top: 23px;
+            text-decoration: none;
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 800,
+        'GRAD' 0,
+        'opsz' 48
+        }
+.search-bar
+{
+    position: absolute;
+    left: 450px;
+    top: 23px;
+    height: 35px;
+    width: 400px;
+    border-radius: 12px;
+    border-color: orange;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 16px;
+}
+.search-button
+{
+    position: absolute;
+    top: 23.5px;
+    left: 836px;
+    height: 39px;
+    width: 35px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left-color: black;
+}
+
+.logo-small
+{
+    right: 40px;
+    top: 10px;
+    position: absolute;
+}
+        .logo-name
+        {
+            position: absolute;
+            top: 70px;
+            right: 25px;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .mutton
+        {
+            width: 300px;
+            height: 180px;
+            border-radius: 16px;
+        }
+        .box
+        {
+            border: 2px solid whitesmoke;
+            top: 250px;
+            left: 120px;
+            display: block;
+            height: 350px;
+            border-radius: 16px;
+            width: 300px;
+            position: absolute;
+            box-shadow: 0 0 10px 5px #42424485;
+        }
+        .heading
+        {
+            position: absolute;
+            top: 110px;
+            left: 5px;
+            font-family: 'Borel', cursive;
+            font-family: 'Dancing Script', cursive;
+            font-family: 'Edu SA Beginner', cursive;
+            font-family: 'Lugrasimo', cursive;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Victor Mono', monospace;
+        }
+        .chicken-lolipop
+        {
+            font-size: 20px;
+            font-family:sans-serif;
+            left: 10px;
+            position: absolute;
+        }
+        .chicken-lolipop-star
+        {
+            position: absolute;
+            top: 220px;
+            left: 10px;
+            color: green;
+        }
+        .chicken-lolipop-para
+        {
+            position: absolute;
+            top: 260px;
+            left: 10px;
+            color: gray;
+            letter-spacing:2px;
+        }
+        .chicken-lolipop-rate
+        {
+            color: gray;
+            position: absolute;
+            top: 200px;
+            right: 10px;
+        }
+        .box2
+        {
+            border: 2px solid white;
+            top: 255px;
+            left: 510px;
+            height: 350px;
+            border-radius: 16px;
+            width: 300px;
+            display: block;
+            position: absolute;
+            box-shadow: 0 0 10px 5px #42424485;
+        }
+        .kothukari
+        {
+            width: 300px;
+            height: 180px;
+            border-radius: 16px;
+        }
+        .kothukari-text
+        {
+            font-size: 20px;
+            font-family:sans-serif;
+            left: 10px;
+            position: absolute;
+        }
+        .kothukari-star
+        {
+            position: absolute;
+            top: 220px;
+            left: 10px;
+            color: green;
+        }
+        .kothukari-para
+        {
+            position: absolute;
+            top: 260px;
+            left: 10px;
+            color: gray;
+            letter-spacing:2px;
+        }
+        .kothukari-rate
+        {
+            color: gray;
+            position: absolute;
+            top: 200px;
+            right: 10px;
+        }
+        .box3
+        {
+            border: 2px solid white;
+            top: 255px;
+            left: 900px;
+            height: 350px;
+            border-radius: 16px;
+            width: 300px;
+            position: absolute;
+            display: block;
+            box-shadow: 0 0 10px 5px #42424485;
+        }
+        .samosa
+        {
+            width: 300px;
+            height: 180px;
+            border-radius: 16px;
+        }
+        .samosa-text
+        {
+            font-size: 20px;
+            font-family:sans-serif;
+            left: 10px;
+            position: absolute;
+        }
+        .samosa-star
+        {
+            position: absolute;
+            top: 220px;
+            left: 10px;
+            color: green;
+        }
+        .samosa-para
+        {
+            position: absolute;
+            top: 260px;
+            left: 10px;
+            color: gray;
+            letter-spacing:2px;
+        }
+        .samosa-rate
+        {
+            color: gray;
+            position: absolute;
+            top: 200px;
+            right: 10px;
+        }
+        .box4
+        {
+            border: 2px solid white;
+            top: 655px;
+            left: 120px;
+            height: 350px;
+            border-radius: 16px;
+            width: 300px;
+            position: absolute;
+            display: block;
+            box-shadow: 0 0 10px 5px #42424485;
+        }
+        .hyderabadi-haleem
+        {
+            width: 300px;
+            height: 180px;
+            border-radius: 16px;
+        }
+        .hyderabadi-haleem-text
+        {
+            font-size: 20px;
+            font-family:sans-serif;
+            left: 10px;
+            position: absolute;
+        }
+        .hyderabadi-haleem-star
+        {
+            position: absolute;
+            top: 220px;
+            left: 10px;
+            color: green;
+        }
+        .hyderabadi-haleem-para
+        {
+            color: gray;
+            position: absolute;
+            top: 260px;
+            left: 10px;
+            letter-spacing: 1px;
+        }
+        .hyderabadi-haleem-rate
+        {
+            color: gray;
+            position: absolute;
+            top: 200px;
+            right: 10px;
+        }
+        .box5
+        {
+            border: 2px solid white;
+            top: 655px;
+            left: 510px;
+            height: 350px;
+            border-radius: 16px;
+            width: 300px;
+            position: absolute;
+            display: block;
+            box-shadow: 0 0 10px 5px #42424485;
+        }
+        .chicken-briyani
+        {
+            width: 300px;
+            height: 180px;
+            border-radius: 16px;
+        }
+        .chicken-briyani-text
+        {
+            font-size: 20px;
+            font-family:sans-serif;
+            left: 10px;
+            position: absolute;
+        }
+        .chicken-briyani-star
+        {
+            position: absolute;
+            top: 220px;
+            left: 10px;
+            color: green;
+        }
+        .chicken-briyani-para
+        {
+            color: gray;
+            position: absolute;
+            top: 260px;
+            left: 10px;
+            letter-spacing: 1px;
+        }
+        .chicken-briyani-rate
+        {
+            color: gray;
+            position: absolute;
+            top: 200px;
+            right: 10px;
+        }
+        .box6
+        {
+            border: 2px solid white;
+            top: 655px;
+            left: 900px;
+            height: 350px;
+            border-radius: 16px;
+            width: 300px;
+            position: absolute;
+            display: block;
+            box-shadow: 0 0 10px 5px #42424485;
+        }
+        .chicken-65
+        {
+            width: 300px;
+            height: 180px;
+            border-radius: 16px;
+        }
+        .chicken-65-text
+        {
+            font-size: 20px;
+            font-family:sans-serif;
+            left: 10px;
+            position: absolute;
+        }
+        .chicken-65-star
+        {
+            position: absolute;
+            top: 220px;
+            left: 10px;
+            color: green;
+        }
+        .chicken-65-para
+        {
+            color: gray;
+            position: absolute;
+            top: 260px;
+            left: 10px;
+            letter-spacing: 1px;
+        }
+        .chicken-65-rate
+        {
+            color: gray;
+            position: absolute;
+            top: 200px;
+            right: 10px;
+        }
+        .box7
+        {
+            border: 2px solid white;
+            top: 1055px;
+            left: 120px;
+            height: 350px;
+            border-radius: 16px;
+            width: 300px;
+            position: absolute;
+            display: block;
+            box-shadow: 0 0 10px 5px #42424485;
+        }
+        .chicken-rice
+        {
+            width: 300px;
+            height: 180px;
+            border-radius: 16px;
+        }
+        .chicken-rice-text
+        {
+            font-size: 20px;
+            font-family:sans-serif;
+            left: 10px;
+            position: absolute;
+        }
+        .chicken-rice-star
+        {
+            position: absolute;
+            top: 220px;
+            left: 10px;
+            color: green;
+        }
+        .chicken-rice-para
+        {
+            color: gray;
+            position: absolute;
+            top: 260px;
+            left: 10px;
+            letter-spacing: 1px;
+        }
+        .chicken-rice-rate
+        {
+            color: gray;
+            position: absolute;
+            top: 200px;
+            right: 10px;
+        }
+        .box8
+        {
+            border: 2px solid white;
+            top: 1055px;
+            left: 510px;
+            height: 350px;
+            border-radius: 16px;
+            width: 300px;
+            position: absolute;
+            display: block;
+            box-shadow: 0 0 10px 5px #42424485;
+        }
+        .chicken-kuzhambu
+        {
+            width: 300px;
+            height: 180px;
+            border-radius: 16px;
+        }
+        .chicken-kuzhambu-text
+        {
+            font-size: 20px;
+            font-family:sans-serif;
+            left: 10px;
+            position: absolute;
+        }
+        .chicken-kuzhambu-star
+        {
+            position: absolute;
+            top: 220px;
+            left: 10px;
+            color: green;
+        }
+        .chicken-kuzhambu-para
+        {
+            color: gray;
+            position: absolute;
+            top: 260px;
+            left: 10px;
+            letter-spacing: 1px;
+        }
+        .chicken-kuzhambu-rate
+        {
+            color: gray;
+            position: absolute;
+            top: 200px;
+            right: 10px;
+        }
+        .box9
+        {
+            border: 2px solid white;
+            top: 1055px;
+            left: 900px;
+            height: 350px;
+            border-radius: 16px;
+            width: 300px;
+            position: absolute;
+            display: block;
+            box-shadow: 0 0 10px 5px #42424485;
+        }
+        .grill
+        {
+            width: 300px;
+            height: 180px;
+            border-radius: 16px;
+        }
+        .grill-text
+        {
+            font-size: 20px;
+            font-family:sans-serif;
+            left: 10px;
+            position: absolute;
+        }
+        .grill-star
+        {
+            position: absolute;
+            top: 220px;
+            left: 10px;
+            color: green;
+        }
+        .grill-para
+        {
+            color: gray;
+            position: absolute;
+            top: 260px;
+            left: 10px;
+            letter-spacing: 1px;
+        }
+        .grill-rate
+        {
+            color: gray;
+            position: absolute;
+            top: 200px;
+            right: 10px;
+        }
+        .add-to-cart
+        {
+            border: 2px solid orange;
+            background-color: orange;
+            color: black;
+            width: 120px;
+            height: 20px;
+            right: 10px;
+            top: 300px;
+            text-align: center;
+            font-weight: bolder;
+            border-radius: 6px;
+            position: absolute;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+        .quantity
+        {
+            position: absolute;
+            top: 250px;
+            left: 190px;
+            font-size: 18px;
+        }
+        #cart_box {
+            display: none;
+            position: fixed;
+            top: 363px;
+            right: -40px;
+            height: 480px;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border: 2px solid orange;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 5px #42424485;
+            z-index: 9999;
+        }
+        #cart_box:target {
+            display: block;
+        }
+        .checkout1
+        {
+            position: absolute;
+            top: 480px;
+            left: 30px;
+            text-decoration: none;
+        }
+        .checkout1:hover
+        {
+            border: 2px solid rgb(40, 139, 40);
+            height: 25px;
+            width: 65px;
+            background-color: rgb(85, 184, 85);
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+
+        }
+        .your-cart
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .checkout
+        {
+            position: absolute;
+            top: 35px;
+            right: 180px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .material-symbols-rounded 
+        {
+            position: absolute;
+            top: 27px;
+            right: 300px;
+            font-size: 40px;
+            text-decoration: none;
+            color: black;
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="b.html" class="material-symbols-outlined">Home</a>
+        <input type="text" placeholder="Search food to full your stomach" name="search" class="search-bar">
+        <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+        <img src="All Images/logo-removebg-preview.png" alt="logo" width="90px" height="60px" class="logo-small">
+        <a href="#cart_box" class="material-symbols-rounded">shopping_cart_checkout</a> 
+        <a href="#cart_box" class="checkout">Cart Checkout</a>           
+        <figcaption class="logo-name">Kola Pasi</figcaption>
+    </div>
+    <div id="cart_box">
+        <h2 class="your-cart">Your Cart</h2>
+        <ul>
+            <li>Item: Full meals, Price: Rs.350</li>
+        </ul>
+        <a href="#" class="checkout1">Go Back</a>
+    </div>
+    <h1 class="heading">Mutton Recipes in Bangalore</h1>
+    <div class="box">
+        <img src="mutton dish/mutton dish/Awadhi Mutton Biryani.jpg" alt="Awadhi" class="mutton">
+        <p class="chicken-lolipop">Awadhi Briyani</p>
+        <p class="chicken-lolipop-rate">Rs.350</p>
+        <p class="chicken-lolipop-star">&#10026; 5.1 Ratings</p>
+        <p class="chicken-lolipop-para">A1 Hotel,Neo Town Road,<br>Electronic City</p>
+        <div class="quantity">
+            <label>Quantity</label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <p class="add-to-cart"> + Add to cart</p>
+    </div>
+    <div class="box2">
+        <img src="mutton dish/mutton dish/mutton-shammi-kebab.jpg" alt="mutton shammi" class="kothukari">
+        <p class="kothukari-text">Mutton Shammi</p>
+        <p class="kothukari-rate">Rs.250</p>
+        <p class="kothukari-star">&#10026; 4.2 Ratings</p>
+        <p class="kothukari-para">Lotus Pavilion, ITC Gardenia - Restaurants In Bengaluru</p>
+        <div class="quantity">
+            <label>Quantity</label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <p class="add-to-cart"> + Add to cart</p>
+    </div>
+    <div class="box3">
+        <img src="mutton dish/mutton dish/mutton paya real.jpg" alt="paya" class="samosa">
+        <p class="samosa-text">Mutton Paya</p>
+        <p class="samosa-rate">Rs.400</p>
+        <p class="samosa-star">&#10026; 4.0 Ratings</p>
+        <p class="samosa-para">Iva By SKR- A Petrichor Hotel<br>America</p>
+        <div class="quantity">
+            <label>Quantity</label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <p class="add-to-cart"> + Add to cart</p>
+    </div>
+    <div class="box4">
+        <img src="mutton dish/mutton dish/Shab_Deg__Kashmiri_Mutton_Kofta_and_Turnip_Curry.jpg" alt="mutton kofta" class="hyderabadi-haleem">
+        <p class="hyderabadi-haleem-text">Mutton Kofta</p>
+        <p class="hyderabadi-haleem-rate">Rs.500</p>
+        <p class="hyderabadi-haleem-star">&#10026; 5.0 Ratings</p>
+        <p class="hyderabadi-haleem-para">The Leela Palace Bengaluru - Garden City's Only Modern Palace Hotel</p>
+        <div class="quantity">
+            <label>Quantity</label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <p class="add-to-cart"> + Add to cart</p>
+    </div>
+    <div class="box5">
+        <img src="mutton dish/mutton dish/Kerala_Mutton_Pepper_Fry.jpg" alt="mutton peper fry" class="chicken-briyani">
+        <p class="chicken-briyani-text">Mutton Pepper Fry</p>
+        <p class="chicken-briyani-rate">Rs.500</p>
+        <p class="chicken-briyani-star">&#10026; 5.0 Ratings</p>
+        <p class="chicken-briyani-para">Kola Pasi Hotel<br>Thiruvannamalai</p>
+        <div class="quantity">
+            <label>Quantity</label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <p class="add-to-cart"> + Add to cart</p>
+    </div>
+    <div class="box6">
+        <img src="mutton dish/mutton dish/mutton briyani real.jpg" alt="mutton briyani" class="chicken-65">
+        <p class="chicken-65-text">Mutton Briyani</p>
+        <p class="chicken-65-rate">Rs.250</p>
+        <p class="chicken-65-star">&#10026; 4.0 Ratings</p>
+        <p class="chicken-65-para">Keys Select Hosur Road - By Lemon Tree Hotels</p>
+        <div class="quantity">
+            <label>Quantity</label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <p class="add-to-cart"> + Add to cart</p>
+    </div>
+    <div class="box7">
+        <img src="mutton dish/mutton dish/aloo patties.jpg" alt="aloo patie" class="chicken-rice">
+        <p class="chicken-rice-text">Aloo Paties</p>
+        <p class="chicken-rice-rate">Rs.180</p>
+        <p class="chicken-rice-star">&#10026; 4.5 Ratings</p>
+        <p class="chicken-rice-para">The Oterra Hotel<br>London</p>
+        <div class="quantity">
+            <label>Quantity</label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <p class="add-to-cart"> + Add to cart</p>
+    </div>
+    <div class="box8">
+        <img src="mutton dish/mutton dish/nawabi mutton biryani.jpg" alt="nawabi mutton briyani" class="chicken-kuzhambu">
+        <p class="chicken-kuzhambu-text">Nawabi Mutton Briyani</p>
+        <p class="chicken-kuzhambu-rate">Rs.380</p>
+        <p class="chicken-kuzhambu-star">&#10026; 5.0 Ratings</p>
+        <p class="chicken-kuzhambu-para">Lemon Tree Hotel, Electronics City, Bangalore</p>
+        <div class="quantity">
+            <label>Quantity</label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <p class="add-to-cart"> + Add to cart</p>
+    </div>
+    <div class="box9">
+        <img src="mutton dish/mutton dish/mutton kuzhmbu.jpg" alt="mutton kuzhambu" class="grill">
+        <p class="grill-text">Mutton Kuzhambu</p>
+        <p class="grill-rate">Rs.350</p>
+        <p class="grill-star">&#10026; 5.0 Ratings</p>
+        <p class="grill-para">Soul Indian Specialty Restaurant, Svenska Design Hotel</p>
+        <div class="quantity">
+            <label>Quantity</label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <p class="add-to-cart"> + Add to cart</p>
+    </div>
+</body>
+</html>

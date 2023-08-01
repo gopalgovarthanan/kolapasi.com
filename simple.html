@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (your existing head content) ... -->
+    <style>
+        /* ... (your existing CSS styles) ... */
+
+        /* Hidden cart box */
+        #cart_box {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border: 2px solid orange;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 5px #42424485;
+            z-index: 9999;
+        }
+
+        /* Show the cart box when the target is in focus */
+        #cart_box:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <!-- ... (your existing nav-bar content) ... -->
+    </div>
+
+    <h1 class="heading">Veg Varieties in Bangalore</h1>
+
+    <!-- Box 1 -->
+    <div class="box">
+    ><a href="#cart_box" class="material-symbols-rounded">shopping_cart_checkout</a> 
+        <a href="#cart_box" class="checkout">Cart Checkout</a>   
+    </div>
+
+
+
+    <!-- ... (Repeat the above block for other items) ... -->
+
+    <!-- Hidden cart box -->
+    <div id="cart_box">
+        <h2>Your Cart</h2>
+        <ul>
+            <li>Item: Full meals, Price: Rs.350</li>
+            <!-- The actual cart content will be generated based on the items added -->
+        </ul>
+        <a href="#" class="checkout">Cart Checkout</a>
+    </div>
+</body>
+</html>
